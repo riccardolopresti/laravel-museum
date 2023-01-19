@@ -3,7 +3,7 @@
 @section('content')
     <ul>
         <li>
-            <a href="#">Artist</a>
+            <a href="{{route('admin.artists.index')}}">Artist</a>
         </li>
         <li>
             <a href="#">Museum</a>
