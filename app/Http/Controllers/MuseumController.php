@@ -14,7 +14,9 @@ class MuseumController extends Controller
      */
     public function index()
     {
-        //
+        $museums = Museum::all();
+
+        return view('admin.museums.index', compact('museums'));
     }
 
     /**
