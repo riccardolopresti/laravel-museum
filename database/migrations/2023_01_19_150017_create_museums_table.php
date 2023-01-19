@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('museums', function (Blueprint $table) {
             $table->id();
+            $table->string('name', 60);
+            $table->string('slug', 70)->unique();
+            $table->string('nation', 30);
             $table->timestamps();
         });
     }
